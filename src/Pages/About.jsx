@@ -1,5 +1,5 @@
 import React from "react";
-
+import arslan from '../assets/images/arslan.jpg'
 const About = () => {
   return (
     <div className="min-h-[80vh] text-white flex items-center justify-center px-6">
@@ -8,7 +8,7 @@ const About = () => {
         {/* Profile Image */}
         <div className="flex justify-center">
           <img
-            src="\public\images\arslan.jpg" // replace with your image path
+            src={arslan} // replace with your image path
             alt="Arslan Profile"
             className="w-64 h-64 object-cover rounded-2xl border-4 border-green-500 shadow-lg opacity-80"
           />

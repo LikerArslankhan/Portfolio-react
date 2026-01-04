@@ -1,5 +1,5 @@
 import React from "react";
-
+import arslan from '../assets/images/arslan.jpg'
 const Contact = () => {
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-6 relative z-10">
@@ -14,7 +14,7 @@ const Contact = () => {
         {/* Left - Profile Image */}
         <div className="flex justify-center">
           <img
-            src="/images/arslan.jpg" // ✅ replace with your image
+            src={arslan} // ✅ replace with your image
             alt="Arslan Profile"
             className="w-64 h-64 object-cover rounded-2xl border-4 border-lime-500 shadow-lg opacity-90"
           />
