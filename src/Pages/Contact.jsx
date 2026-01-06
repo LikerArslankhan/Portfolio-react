@@ -14,9 +14,10 @@ const Contact = () => {
         {/* Left - Profile Image */}
         <div className="flex justify-center">
           <img
+            id="aboutImage"
             src={arslan} // ✅ replace with your image
             alt="Arslan Profile"
-            className="w-64 h-64 object-cover rounded-2xl border-4 border-lime-500 shadow-lg opacity-90"
+            className="w-64 h-64 object-cover rounded-2xl  shadow-lg opacity-90"
           />
         </div>
 
@@ -32,17 +33,17 @@ const Contact = () => {
             {/* Email */}
             <a
               href="mailto:likerexpert@gmail.com"
-              className="px-5 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition"
+              className="px-5 py-3 border border-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition"
             >
               Email: likerexpert@gmail.com
             </a>
 
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/mr_arsalnnnnn/"
+              href="https://www.instagram.com/mr_arsalnnnnn?igsh=c3ZqYzBmZWMwN2Zy"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 bg-pink-500 text-white font-semibold rounded-lg hover:bg-pink-400 transition"
+              className="px-5 py-3 border border-green-500 text-white font-semibold rounded-lg hover:bg-pink-400 transition"
             >
               Instagram: @mr_arsalnnnnn
             </a>
@@ -52,7 +53,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/mr-arslan-411137262/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition"
+              className="px-5 py-3 border border-green-500 text-white font-semibold rounded-lg hover:bg-blue-400 transition"
             >
               LinkedIn Profile
             </a>

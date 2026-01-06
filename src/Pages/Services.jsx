@@ -11,13 +11,19 @@ const Services = () => {
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-6">
       
-      <h1 className="text-4xl font-bold mb-10 text-lime-800 text-center">My Services</h1>
+      <h1 className="text-4xl font-bold mb-10 text-lime-500   text-center"
+       style={{
+          fontFamily: "Lilex",
+          fontWeight: 500,
+        }}
+      >My Services</h1>
 
       <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
         {servicesList.map((service) => (
           <div
+          
             key={service.id}
-            className="bg-black-400  border-4 border-lime-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition transform"
+            className= " serviceCard    p-6 rounded-2xl shadow-lg hover:scale-105 transition transform"
           >
             {/* Unique Number */}
             <div className="flex items-center justify-center mb-4">

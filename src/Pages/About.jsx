@@ -7,16 +7,21 @@ const About = () => {
 
         {/* Profile Image */}
         <div className="flex justify-center">
-          <img
+          <img id="aboutImage"
             src={arslan} // replace with your image path
             alt="Arslan Profile"
-            className="w-64 h-64 object-cover rounded-2xl border-4 border-green-500 shadow-lg opacity-80"
+            className="w-64 h-64 object-cover rounded-2xl  shadow-lg opacity-80"
           />
         </div>
 
         {/* Profile Content */}
         <div>
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4"
+            style={{
+              fontFamily: "Lilex",
+              fontWeight: 200
+            }}
+          >
             Hi, I'm <span className="text-green-500">Arslan</span>
           </h1>
 
@@ -44,7 +49,7 @@ const About = () => {
             href="https://www.linkedin.com/in/mr-arslan-411137262/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition"
+            className="inline-block px-6 py-3 border border-green-500 text-white font-semibold rounded-lg hover:bg-green-400 transition"
           >
             Visit My LinkedIn
           </a>

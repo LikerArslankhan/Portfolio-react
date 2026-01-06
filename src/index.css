@@ -3,3 +3,90 @@
 
 
 
+
+
+
+
+/* Required for rotating gradient */
+@property --rotatr {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Border rotation animation */
+@keyframes rotateBorder {
+  to {
+    --rotatr: 360deg;
+  }
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0 #67DDA4;
+  }
+  to {
+    box-shadow: 0 0 60px #67DDA4;
+  }
+}
+
+/* IMAGE / CARD */
+#aboutImage {
+ 
+
+  border: 5px solid transparent;   /* 🔥 MOST IMPORTANT */
+  border-radius: 20px;
+
+  background:
+    linear-gradient(black) padding-box,
+    conic-gradient(from var(--rotatr), black, #67DDA4) border-box;
+
+  animation:
+    rotateBorder 5s linear infinite,
+    glow 1.5s ease-in-out infinite alternate;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* class based css in animation*/
+
+@property --rotatr {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotateBorder {
+  to {
+    --rotatr: 360deg;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0 #67DDA4;
+  }
+  to {
+    box-shadow: 0 0 40px #67DDA4;
+  }
+}
+
+/* SERVICE CARD */
+.serviceCard {
+  border: 4px solid transparent;
+  border-radius: 20px;
+
+  background:
+    linear-gradient(black, black) padding-box,
+    conic-gradient(from var(--rotatr), black, #67DDA4, black) border-box;
+
+  animation: rotateBorder 6s linear infinite;
+
+  box-sizing: border-box;          /* 🔥 VERY IMPORTANT */
+}
+
+/* optional hover glow */
+
